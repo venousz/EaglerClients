@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eaglercraft Hacks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+        iframe {
+            width: 100%;
+            height: 80vh; /* Adjust as necessary */
+            border: 1px solid #ccc;
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+    <h1>Eaglercraft Hacks</h1>
+    <button onclick="runCode('https://raw.githubusercontent.com/adsf1234-hacker/EaglercraftHacks/main/FuschiaX.html')">Run FuschiaX</button>
+    <button onclick="runCode('https://raw.githubusercontent.com/adsf1234-hacker/EaglercraftHacks/main/N0VA_CLIENT.html')">Run N0VA CLIENT</button>
+    <button onclick="runCode('https://raw.githubusercontent.com/adsf1234-hacker/EaglercraftHacks/main/Nebula.html')">Run Nebula</button>
+    <button onclick="runCode('https://raw.githubusercontent.com/adsf1234-hacker/EaglercraftHacks/main/NitClient%202.0.html')">Run NitClient 2.0</button>
+    <button onclick="runCode('https://raw.githubusercontent.com/adsf1234-hacker/EaglercraftHacks/main/Oddfuture.html')">Run Oddfuture</button>
+    <button onclick="runCode('https://raw.githubusercontent.com/adsf1234-hacker/EaglercraftHacks/main/UwUClient%20v1%20Full.html')">Run UwUClient v1 Full</button>
+    <button onclick="runCode('https://raw.githubusercontent.com/adsf1234-hacker/EaglercraftHacks/main/kerosone.html')">Run Kerosone</button>
+    <button onclick="runCode('https://raw.githubusercontent.com/adsf1234-hacker/EaglercraftHacks/main/nit_client.html')">Run Nit Client</button>
+    <iframe id="outputFrame"></iframe>
+
+    <script>
+        function runCode(url) {
+            const iframe = document.getElementById('outputFrame');
+            iframe.src = url; // Set the source of the iframe to the specified URL
+            iframe.style.display = 'block'; // Show the iframe
+        }
+    </script>
+</body>
+</html>
