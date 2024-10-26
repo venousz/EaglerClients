@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -24,35 +25,62 @@
             cursor: pointer;
             background-color: #4CAF50; /* Green */
             color: white;
+            position: relative; /* Allow absolute positioning of exit button */
         }
         button:hover {
             background-color: #45a049; /* Darker green */
         }
+        #clientSelection {
+            display: block; /* Show client selection buttons initially */
+        }
+        #iframeContainer {
+            display: none; /* Hide iframe initially */
+            position: relative; /* Set position for exit button */
+            width: 100%;
+            height: 100%;
+        }
         iframe {
             width: 100%;
-            height: 80vh; /* Adjust as necessary */
-            border: 1px solid #ccc;
-            display: none; /* Hidden by default */
+            height: 100%; /* Fill the whole screen */
+            border: none; /* No border */
+        }
+        #exitButton {
+            position: absolute; /* Position exit button */
+            top: 10px; /* Distance from top */
+            right: 10px; /* Distance from right */
+            background-color: red; /* Red background for visibility */
         }
     </style>
 </head>
 <body>
     <h1>Eaglercraft Hacks</h1>
-    <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/FuschiaX.html')">Run FuschiaX</button>
-    <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/N0VA_CLIENT.html')">Run N0VA CLIENT</button>
-    <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/Nebula.html')">Run Nebula</button>
-    <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/NitClient%202.0.html')">Run NitClient 2.0</button>
-    <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/Oddfuture.html')">Run Oddfuture</button>
-    <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/UwUClient%20v1%20Full.html')">Run UwUClient v1 Full</button>
-    <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/kerosone.html')">Run Kerosone</button>
-    <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/nit_client.html')">Run Nit Client</button>
-    <iframe id="outputFrame"></iframe>
+    <div id="clientSelection">
+        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/FuschiaX.html')">Run FuschiaX</button>
+        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/N0VA_CLIENT.html')">Run N0VA CLIENT</button>
+        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/Nebula.html')">Run Nebula</button>
+        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/NitClient%202.0.html')">Run NitClient 2.0</button>
+        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/Oddfuture.html')">Run Oddfuture</button>
+        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/UwUClient%20v1%20Full.html')">Run UwUClient v1 Full</button>
+        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/kerosone.html')">Run Kerosone</button>
+        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/nit_client.html')">Run Nit Client</button>
+    </div>
+    <div id="iframeContainer">
+        <button id="exitButton" onclick="exitClient()">Exit Client</button>
+        <iframe id="outputFrame"></iframe>
+    </div>
 
     <script>
         function runCode(url) {
+            document.getElementById('clientSelection').style.display = 'none'; // Hide client selection
+            document.getElementById('iframeContainer').style.display = 'block'; // Show iframe container
             const iframe = document.getElementById('outputFrame');
             iframe.src = url; // Set the source of the iframe to the specified URL
-            iframe.style.display = 'block'; // Show the iframe
+        }
+
+        function exitClient() {
+            document.getElementById('clientSelection').style.display = 'block'; // Show client selection again
+            document.getElementById('iframeContainer').style.display = 'none'; // Hide iframe container
+            document.getElementById('outputFrame').src = ''; // Clear the iframe source
         }
     </script>
 </body>
