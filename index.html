@@ -39,8 +39,9 @@
         }
         iframe {
             width: 100%;
-            height: calc(100vh - 20px); /* Fill the whole screen minus space for buttons */
+            height: calc(100vh - 50px); /* Full screen minus space for buttons */
             border: none; /* No border */
+            pointer-events: auto; /* Enable interactions within the iframe */
         }
         #exitButton {
             position: absolute; /* Position exit button */
@@ -66,7 +67,7 @@
     </div>
     <div id="iframeContainer">
         <button id="exitButton" onclick="exitClient()">Exit Client</button>
-        <iframe id="outputFrame"></iframe>
+        <iframe id="outputFrame" sandbox="allow-same-origin allow-scripts"></iframe>
     </div>
 
     <script>
