@@ -5,83 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eaglercraft Hacks</title>
     <style>
+        /* Import Google Fonts for modern styling */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* Reset body style and apply dark theme */
         body {
-            margin: 0; /* Remove default margin */
-            height: 100vh; /* Full viewport height */
-            overflow: hidden; /* Prevent scrollbars */
-            position: relative; /* Relative positioning for absolute elements */
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
-        button {
-            padding: 10px 20px;
+
+        /* Page header styling */
+        h1 {
+            font-size: 2.5rem;
+            color: #ffa726;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Style for each button */
+        .client-button {
+            padding: 12px 25px;
             margin: 10px;
             font-size: 16px;
+            font-weight: 700;
+            color: #121212;
+            background-color: #ffa726;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
-            background-color: #4CAF50; /* Green */
-            color: white;
-            z-index: 10; /* Ensure it's on top */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0px 4px 12px rgba(255, 165, 38, 0.2);
         }
-        button:hover {
-            background-color: #45a049; /* Darker green */
+
+        /* Button hover effect */
+        .client-button:hover {
+            background-color: #ff8f00;
+            transform: scale(1.05);
         }
-        #clientSelection {
-            display: block; /* Show client selection buttons initially */
-            z-index: 10; /* On top of the iframe */
+
+        /* Button focus styling */
+        .client-button:focus {
+            outline: 2px solid #ff8f00;
         }
-        #iframeContainer {
-            display: none; /* Hide iframe initially */
-            position: absolute; /* Full screen */
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0; /* Full height */
-        }
-        iframe {
-            width: 100%;
-            height: calc(100vh - 50px); /* Full screen minus space for buttons */
-            border: none; /* No border */
-        }
-        #exitButton {
-            position: absolute; /* Position exit button */
-            top: 10px; /* Distance from top */
-            right: 10px; /* Distance from right */
-            background-color: red; /* Red background for visibility */
-            color: white; /* Text color */
-            z-index: 20; /* Ensure exit button is on top */
+
+        /* Button container styling */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 600px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align:center;">Eaglercraft Hacks</h1>
-    <div id="clientSelection">
-        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/FuschiaX.html')">Run FuschiaX</button>
-        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/N0VA_CLIENT.html')">Run N0VA CLIENT</button>
-        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/Nebula.html')">Run Nebula</button>
-        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/NitClient%202.0.html')">Run NitClient 2.0</button>
-        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/Oddfuture.html')">Run Oddfuture</button>
-        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/UwUClient%20v1%20Full.html')">Run UwUClient v1 Full</button>
-        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/kerosone.html')">Run Kerosone</button>
-        <button onclick="runCode('https://adsf1234-hacker.github.io/EaglercraftHacks/nit_client.html')">Run Nit Client</button>
-    </div>
-    <div id="iframeContainer">
-        <button id="exitButton" onclick="exitClient()">Exit Client</button>
-        <iframe id="outputFrame" sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock"></iframe>
-    </div>
+    <h1>Eaglercraft Hacks</h1>
 
-    <script>
-        function runCode(url) {
-            document.getElementById('clientSelection').style.display = 'none'; // Hide client selection
-            document.getElementById('iframeContainer').style.display = 'block'; // Show iframe container
-            const iframe = document.getElementById('outputFrame');
-            iframe.src = url; // Set the source of the iframe to the specified URL
-        }
-
-        function exitClient() {
-            document.getElementById('clientSelection').style.display = 'block'; // Show client selection again
-            document.getElementById('iframeContainer').style.display = 'none'; // Hide iframe container
-            document.getElementById('outputFrame').src = ''; // Clear the iframe source
-        }
-    </script>
+    <!-- Button container to organize buttons in a responsive layout -->
+    <div class="button-container">
+        <button class="client-button" onclick="window.open('https://adsf1234-hacker.github.io/EaglercraftHacks/FuschiaX.html', '_blank')">Run FuschiaX</button>
+        <button class="client-button" onclick="window.open('https://adsf1234-hacker.github.io/EaglercraftHacks/N0VA_CLIENT.html', '_blank')">Run N0VA CLIENT</button>
+        <button class="client-button" onclick="window.open('https://adsf1234-hacker.github.io/EaglercraftHacks/Nebula.html', '_blank')">Run Nebula</button>
+        <button class="client-button" onclick="window.open('https://adsf1234-hacker.github.io/EaglercraftHacks/NitClient%202.0.html', '_blank')">Run NitClient 2.0</button>
+        <button class="client-button" onclick="window.open('https://adsf1234-hacker.github.io/EaglercraftHacks/Oddfuture.html', '_blank')">Run Oddfuture</button>
+        <button class="client-button" onclick="window.open('https://adsf1234-hacker.github.io/EaglercraftHacks/UwUClient%20v1%20Full.html', '_blank')">Run UwUClient v1 Full</button>
+        <button class="client-button" onclick="window.open('https://adsf1234-hacker.github.io/EaglercraftHacks/kerosone.html', '_blank')">Run Kerosone</button>
+        <button class="client-button" onclick="window.open('https://adsf1234-hacker.github.io/EaglercraftHacks/nit_client.html', '_blank')">Run Nit Client</button>
+    </div>
 </body>
 </html>
