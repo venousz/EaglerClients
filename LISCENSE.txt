@@ -1,0 +1,38 @@
+1. License Grant
+
+Subject to the terms of this License Agreement, George  grants you a limited, non-exclusive, non-transferable, revocable license to access and use the EaglerHax website (the "Website") for personal and non-commercial purposes only.
+
+2. Restrictions
+
+You agree that you will not:
+
+Copy, modify, distribute, sell, or create derivative works of the Website or any portion of its code without the express written permission of the Licensor.
+Share, transfer, or make the Website or its code available to any third party without prior written consent from the Licensor.
+Use any part of the Website's code for any purpose that is unlawful or prohibited by this License Agreement.
+3. Ownership and Intellectual Property Rights
+
+All content, features, and functionality on the Website, including but not limited to text, graphics, logos, icons, images, and software, are owned by the Licensor or its licensors and are protected by copyright, trademark, and other intellectual property laws. You acknowledge that no ownership rights are transferred to you by this License Agreement.
+
+4. Disclaimers
+
+The Website is provided "as is" without warranties of any kind, either express or implied. The Licensor does not guarantee that the Website will be error-free or uninterrupted or that defects will be corrected. Your use of the Website is at your own risk.
+
+5. Limitation of Liability
+
+In no event shall the Licensor be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Website, whether based on warranty, contract, tort (including negligence), or any other legal theory.
+
+6. Termination
+
+The Licensor may terminate this License Agreement at any time for any reason. Upon termination, you must cease all use of the Website and destroy any copies of materials obtained from the Website.
+
+7. Modifications to the License
+
+The Licensor reserves the right to modify this License Agreement at any time. Changes will be effective immediately upon posting on the Website. Your continued use of the Website after any changes constitutes acceptance of the modified License Agreement.
+
+8. Governing Law
+
+This License Agreement shall be governed by and construed in accordance with the laws of [Your State/Country]. Any disputes arising out of or related to this License Agreement shall be subject to the exclusive jurisdiction of the courts located in Ohio.
+
+9. Acceptance of Terms
+
+By accessing or using the Website, you acknowledge that you have read, understood, and agree to be bound by this License Agreement.
