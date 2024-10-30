@@ -31,7 +31,7 @@ The Licensor reserves the right to modify this License Agreement at any time. Ch
 
 8. Governing Law
 
-This License Agreement shall be governed by and construed in accordance with the laws of [Your State/Country]. Any disputes arising out of or related to this License Agreement shall be subject to the exclusive jurisdiction of the courts located in Ohio.
+This License Agreement shall be governed by and construed in accordance with the laws of Ohio. Any disputes arising out of or related to this License Agreement shall be subject to the exclusive jurisdiction of the courts located in Ohio.
 
 9. Acceptance of Terms
 
